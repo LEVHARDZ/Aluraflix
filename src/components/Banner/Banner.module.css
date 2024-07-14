@@ -1,0 +1,15 @@
+.figureEstilizada{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("../../assets/imagefondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    border-top: 2px solid;
+    border-color: #0000ff;
+    box-shadow: inset 0px 200px 8px -197px rgba(0, 0, 255, 0.93);
+}
+  

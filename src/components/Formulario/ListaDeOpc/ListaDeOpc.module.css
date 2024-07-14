@@ -1,0 +1,25 @@
+.inputData{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+label{
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+}
+
+select{
+    background: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(38, 38, 38, 1);
+    text-indent: 20px;
+    height: 62px;
+    color: rgb(100, 100, 100);
+}
+option{
+    background-color: rgba(38, 38, 38, 1);
+}

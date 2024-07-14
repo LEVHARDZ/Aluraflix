@@ -1,0 +1,19 @@
+.tituloMain{
+    margin: 70px auto auto auto;
+    font-family: "Roboto";
+    font-size: 70px;
+    color: white;
+    font-weight: bolder;
+}
+
+.parrafoMain{
+    margin: 20px auto 47px auto;
+    font-family: "Roboto";
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+.tituloMain, .parrafoMain{
+    text-align: center;
+}

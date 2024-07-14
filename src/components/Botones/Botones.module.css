@@ -1,0 +1,35 @@
+.activeBtn{
+  width: 180px;
+  height: 54px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color:#000000e5;
+  color: #0000ff;
+  border-color:#0000ff;
+  box-shadow: inset 1px 3px 20px 1px rgba(0, 0, 255, 0.93);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.activeBtn:hover{
+  border-color:#0000ff5f;
+  background-color:#0b1baf8d;
+}
+
+.noActiveBtn{
+  width: 180px;
+  height: 54px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color:#000000e5;
+  color: white;
+  border-color:white;
+  box-shadow: inset 1px 3px 20px 1px white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.noActiveBtn:hover{
+  border-color:#e7e4e4e0;
+  background-color:#9b9ca194;
+}

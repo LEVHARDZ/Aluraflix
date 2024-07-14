@@ -1,0 +1,53 @@
+.contentAll{
+    display: flex;
+  width: 90%;
+  height: max-content;
+  gap: 2px;
+}
+
+.contentText{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;}
+
+.titleCategoria{
+  width: 296px;
+  height: 92px;
+  margin: 29px 0 40px 0;
+  background-color: #6bd1ff;
+  border-radius: 15px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;}
+
+.tituloEstilizado{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;}
+
+.parrafoEstilizado{
+  font-weight: 200;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 9px 0 0 0;}
+
+.thumbnail{
+  background-image: url(../../../assets/imageonfondo.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 46vh;
+  background-size: cover;
+  margin: 0;
+  border-style: solid;
+  border-radius: 10px;
+  border-color:#49c9ff;
+  box-shadow:  inset 0px 0px 20px 12px rgb(8 177 245);
+}

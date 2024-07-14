@@ -1,0 +1,16 @@
+.LogoHeader{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  img {
+    width: 10%;
+    padding: 45.5px 0 45.5px 51.5px;
+  }
+
+  .contentBtns{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  gap: 10px;
+  }
