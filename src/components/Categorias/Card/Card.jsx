@@ -2,7 +2,7 @@ import cardStyles from "./Card.module.css";
 
 const Card = (props) => {
 
-const{colorCat, eliminarVideo} = props 
+const{colorCat, eliminarVideo, editarVideo} = props 
 const{imagen, id}=props.dataVideoCard 
 
   return (
@@ -25,7 +25,7 @@ const{imagen, id}=props.dataVideoCard
           </svg>
           <span>Borrar</span>
           </div>
-          <div className={cardStyles.controller}>
+          <div className={cardStyles.controller} onClick={()=>editarVideo(true)}>
           <svg
             width="26"
             height="29"

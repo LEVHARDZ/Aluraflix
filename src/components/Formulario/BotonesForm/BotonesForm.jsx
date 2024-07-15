@@ -1,11 +1,13 @@
 import botonesFormStyles from "./BotonesForm.module.css"
 import Botones from '../../Botones/Botones'
 
-const BotonesForm = () => {
+const BotonesForm = (props) => {
+
+  const{btnFormModal}=props
   return (
-    <div className={botonesFormStyles.botonesFormStyled}>
+    <div className={botonesFormStyles.botonesFormStyled} style={btnFormModal}>
         <Botones ContentText="Guardar" />
-        <Botones ContentText="Limpiar" />
+        <Botones ContentText="Limpiar"/>
     </div>
   )
 }

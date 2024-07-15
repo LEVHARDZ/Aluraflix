@@ -1,7 +1,11 @@
 import botonesStyles from "./Botones.module.css";
 import { Link } from "react-router-dom";
 
-const Botones = ({ ContentText, pagina, estado, onClick }) => {
+const Botones = (props) => {
+
+  const { ContentText, pagina, estado, onClick } = props
+
+
   return (
     <Link to={pagina}>
       <button

@@ -7,10 +7,12 @@ import Pie from "./components/Footer/Footer";
 import Page404 from "./components/Page404/Page404";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ModalForm from "./components/ModalForm/ModalForm";
 
 function App() {
   const [videoRegister, setVideoRegister] = useState([]);
   const [categorias, setCategorias] = useState([]);
+  const [clic, setClic]=useState(false)
 
   useEffect(() => {
     fetch("http://localhost:3000/videos")
@@ -34,9 +36,13 @@ function App() {
   };
 
   const eliminarVideo = (id) => {
-    const videosActuales = videoRegister.filter((video)=>video.id != id)
-    setVideoRegister(videosActuales)
+    const videosActuales = videoRegister.filter((video) => video.id != id);
+    setVideoRegister(videosActuales);
   };
+
+  const editarVideo = (senal)=> {
+    setClic(senal) 
+  }
 
   return (
     <>
@@ -51,6 +57,7 @@ function App() {
                 dataCateg={categorias}
                 dataVideo={videoRegister}
                 eliminarVideo={eliminarVideo}
+                editarVideo={editarVideo}
               />
             }
           />
@@ -65,8 +72,14 @@ function App() {
           ></Route>
           <Route path="*" element={<Page404 />}></Route>
         </Routes>
+        <Pie />
+        <ModalForm
+          dataCateg={categorias.map((categoria) => categoria.equipo)}
+          videoRegister={registrarVideo}
+          controlClic ={clic}
+          editarVideo={editarVideo}
+        />
       </Router>
-      <Pie />
     </>
   );
 }

@@ -3,7 +3,7 @@ import Banner from "../../components/Banner/Banner";
 import Categoria from "../../components/Categorias/Categorias";
 
 function Home(props) {
-  const { dataVideo, eliminarVideo } = props;
+  const { dataVideo, eliminarVideo, editarVideo } = props;
 
   return (
     <>
@@ -16,6 +16,7 @@ function Home(props) {
             (video) => video.categoria === categoria.equipo
           )}
           eliminarVideo={eliminarVideo}
+          editarVideo={editarVideo}
         />
       ))}
     </>

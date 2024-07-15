@@ -6,7 +6,7 @@ const Categoria = (props) => {
 
   const colorbkg = { backgroundColor: color };
 
-  const {datosVideo, eliminarVideo}=props;
+  const {datosVideo, eliminarVideo, editarVideo}=props;
 
 
   return datosVideo.length > 0 && (
@@ -21,6 +21,7 @@ const Categoria = (props) => {
             key={dtaVideo.id}
             colorCat={color}
             eliminarVideo={eliminarVideo}
+            editarVideo={editarVideo}
           />
         ))}
       </div>

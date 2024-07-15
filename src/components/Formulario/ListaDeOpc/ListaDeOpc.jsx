@@ -7,10 +7,10 @@ function ListaDeOpc(props) {
   return (
     <div className={listDeOpcStyles.inputData}>
       <label>{props.tituloLabel}</label>
-      <select value={props.valor} onChange={manejarCambios}>
-        <option value="" disabled defaultValue="" hidden>Seleccione una categoría</option>
+      <select style={props.inputFormModal} value={props.valor} onChange={manejarCambios} >
+        <option value="" disabled defaultValue="" hidden >Seleccione una categoría</option>
         {props.equipoName.map((categoria, index) => (
-          <option key={index}>{categoria}</option>
+          <option style={props.selectFormModal} key={index}>{categoria}</option>
         ))}
       </select>
     </div>
